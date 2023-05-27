@@ -1,23 +1,62 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import "./assets/scss/main.scss";
+import "./assets/scss/components/swiper/_swiper.scss"
+import "./assets/scss/components/sections/popular.scss"
+// import "./node_modules/normalizecss/normalize.css";
+// import swiper
+import Swiper, { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+Swiper.use([Navigation, Pagination]);
 
-setupCounter(document.querySelector('#counter'))
+var swiperProducts = new Swiper(".swiperProducts", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiperCategoriesNav = new Swiper(".swiperCategoriesNav", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiperNewProd = new Swiper(".swiperNewProd", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});

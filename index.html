@@ -1,12 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Clothing Store</title>
   </head>
   <body>
+    <!-- HEADER -->
+    <header class="head wrapper">
+      <div class="head-title">
+        Lorem ipsum is placeholder text commonly used -20%
+      </div>
+      <nav class="head-box">
+        <div class="head-box__burger">burger</div>
+        <div class="head-box__logo">LOGO</div>
+        <a href="#search"><img src="" alt="err_search" /></a>
+        <a href="#lk"><img src="" alt="err_lk" /></a>
+        <a href="#shop"><img src="" alt="err_shop" /></a>
+      </nav>
+    </header>
+    <!-- / HEADER -->
+
+    <main class="main wrapper">
+      <!-- SPRING MOOD SLIDER -->
+      <section class="main__spring-mood">
+        <div class="spring-mood__title">Spring mood</div>
+        <div class="spring-mood__stock">-20% на новую коллекцию.</div>
+        <button class="spring-mood__btn-catalog">
+          <span class="btn-catalog__text">В КАТАЛОГ</span>
+          <img src="" alt="err_arrow" class="btn-catalog__arrow" />
+        </button>
+      </section>
+      <!-- / SPRING MOOD SLIDER -->
+
+      <!-- CATEGORIES -->
+      <section class="categories wrapper">
+        <!-- CATEGORIES NAV -->
+        <div class="categories-nav swiper swiperCategoriesNav">
+          <div class="categories-nav__slider swiper-wrapper">
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Футболки</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Худи</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Свитшоты</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Лонгсливы</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Рубашки</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Свитера</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Джинсы</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Штаны</span>
+            </div>
+            <div class="categories-nav__item swiper-slide">
+              <img src="" alt="err-categories" />
+              <span class="categories-nav__title">Спортивные штаны</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- / CATEGORIES NAV -->
+
+        <!-- CATEGORIES INFO -->
+        <div class="categories-products">
+          <div class="categories-products__title">Категории товаров</div>
+          <div class="categories-products__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+            blandit massa enim nec dui nunc mattis. Enim blandit volutpat
+            maecenas volutpat blandit aliquam etiam.
+          </div>
+        </div>
+        <!-- / CATEGORIES INFO -->
+
+        <img
+          src=""
+          alt="err-categories__main-img"
+          class="categories__main-img"
+        />
+
+        <div class="swiper swiperProducts">
+          <div class="categories-slider swiper-wrapper">
+            <div class="categories-slider__item swiper-slide">
+              <img
+                src=""
+                alt="err-categories-slider"
+                class="categories-slider__item-img"
+              />
+              <div class="categories-slider__item-title">Мужская одежда</div>
+            </div>
+            <div class="categories-slider__item swiper-slide">
+              <img
+                src=""
+                alt="err-categories-slider"
+                class="categories-slider__item-img"
+              />
+              <div class="categories-slider__item-title">Женская одежда</div>
+            </div>
+            <div class="categories-slider__item swiper-slide">
+              <img
+                src=""
+                alt="err-categories-slider"
+                class="categories-slider__item-img"
+              />
+              <div class="categories-slider__item-title">Детям</div>
+            </div>
+            <div class="categories-slider__item swiper-slide">
+              <img
+                src=""
+                alt="err-categories-slider"
+                class="categories-slider__item-img"
+              />
+              <div class="categories-slider__item-title">Обувь</div>
+            </div>
+            <div class="categories-slider__item swiper-slide">
+              <img
+                src=""
+                alt="err-categories-slider"
+                class="categories-slider__item-img"
+              />
+              <div class="categories-slider__item-title">Аксессуары</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- / CATEGORIES -->
+
+      <!-- NEW PRODUCTS -->
+      <section class="new-prod">
+        <div class="new-prod__head prod-head">
+          <h1 class="prod-head__title">Популярное</h1>
+          <button class="prod-head__btn">
+            <span class="prod-head__btn-text">В КАТАЛОГ</span>
+            <span class="prod-head__btn-arrow">-></span>
+          </button>
+        </div>
+        <div class="swiper swiperNewProd">
+          <div class="new-prod__slider prod-slider swiper-wrapper">
+            <div class="prod-slider__item prod-item swiper-slide">
+              <!-- BOX IMG -->
+              <div class="prod-item__box prod-box">
+                <img src="" alt="err-prod-item-img" class="prod-box__img" />
+                <div class="prod-box_fevorit">LIKES / FAVORIT</div>
+                <div class="prod-box__new">New</div>
+              </div>
+              <!-- BOX DESCRIPTION -->
+              <div class="prod-slider__description prod-description">
+                <div class="prod-description__cost prod-cost">
+                  <span class="prod-cost__price">PRICE</span>
+                  <span class="prod-cost__currency">CURRENCY</span>
+                </div>
+                <div class="prod-description__name">NAME</div>
+                <div class="prod-description__label">LABEL</div>
+              </div>
+            </div>
+            <div class="prod-slider__item prod-item swiper-slide">
+              <!-- BOX IMG -->
+              <div class="prod-item__box prod-box">
+                <img src="" alt="err-prod-item-img" class="prod-box__img" />
+                <div class="prod-box_fevorit">LIKES / FAVORIT</div>
+                <div class="prod-box__new">New</div>
+              </div>
+              <!-- BOX DESCRIPTION -->
+              <div class="prod-slider__description prod-description">
+                <div class="prod-description__cost prod-cost">
+                  <span class="prod-cost__price">PRICE</span>
+                  <span class="prod-cost__currency">CURRENCY</span>
+                </div>
+                <div class="prod-description__name">NAME</div>
+                <div class="prod-description__label">LABEL</div>
+              </div>
+            </div>
+            <div class="prod-slider__item prod-item swiper-slide">
+              <!-- BOX IMG -->
+              <div class="prod-item__box prod-box">
+                <img src="" alt="err-prod-item-img" class="prod-box__img" />
+                <div class="prod-box_fevorit">LIKES / FAVORIT</div>
+                <div class="prod-box__new">New</div>
+              </div>
+              <!-- BOX DESCRIPTION -->
+              <div class="prod-slider__description prod-description">
+                <div class="prod-description__cost prod-cost">
+                  <span class="prod-cost__price">PRICE</span>
+                  <span class="prod-cost__currency">CURRENCY</span>
+                </div>
+                <div class="prod-description__name">NAME</div>
+                <div class="prod-description__label">LABEL</div>
+              </div>
+            </div>
+            <div class="prod-slider__item prod-item swiper-slide">
+              <!-- BOX IMG -->
+              <div class="prod-item__box prod-box">
+                <img src="" alt="err-prod-item-img" class="prod-box__img" />
+                <div class="prod-box_fevorit">LIKES / FAVORIT</div>
+                <div class="prod-box__new">New</div>
+              </div>
+              <!-- BOX DESCRIPTION -->
+              <div class="prod-slider__description prod-description">
+                <div class="prod-description__cost prod-cost">
+                  <span class="prod-cost__price">PRICE</span>
+                  <span class="prod-cost__currency">CURRENCY</span>
+                </div>
+                <div class="prod-description__name">NAME</div>
+                <div class="prod-description__label">LABEL</div>
+              </div>
+            </div>
+            <div class="prod-slider__item prod-item swiper-slide">
+              <!-- BOX IMG -->
+              <div class="prod-item__box prod-box">
+                <img src="" alt="err-prod-item-img" class="prod-box__img" />
+                <div class="prod-box_fevorit">LIKES / FAVORIT</div>
+                <div class="prod-box__new">New</div>
+              </div>
+              <!-- BOX DESCRIPTION -->
+              <div class="prod-slider__description prod-description">
+                <div class="prod-description__cost prod-cost">
+                  <span class="prod-cost__price">PRICE</span>
+                  <span class="prod-cost__currency">CURRENCY</span>
+                </div>
+                <div class="prod-description__name">NAME</div>
+                <div class="prod-description__label">LABEL</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- / POPULAR -->
+      <section class="popular">
+        <h1 class="popular__title">Полуряное</h1>
+        <img src="" alt="err-popular-img" class="popular__img">
+        <h2 class="popular__subtitle">Джинсы</h2>
+        <span class="popular__trend"></span>
+      </section>
+    </main>
+
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
