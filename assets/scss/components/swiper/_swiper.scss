@@ -1,14 +1,39 @@
+
+.swiper-slide {
+  margin: 0px;
+}
+
+.swiperBackImg {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperCategoriesCategory {
+  width: 300px;
+  height: 258px;
+}
+
 .swiperProducts {
   width: 300px;
   height: 150px;
 }
 
-.swiperCategoriesNav {
-  width: 300px;
-  height: 150px;
-}
 
 .swiperNewProd {
   width: 300px;
   height: 150px;
+}
+
+.swiperDiscount {
+  width: 300px;
+  height: 150px;
+}
+
+.swiperNews {
+  width: 300px;
+  height: 150px;
+}
+
+#swiperCategoriesCategory {
+  overflow: visible;
 }

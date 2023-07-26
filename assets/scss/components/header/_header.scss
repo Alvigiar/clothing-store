@@ -1,0 +1,27 @@
+.head {
+  background-color: black;
+  color: white;
+  padding: 23px 0px;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-nav {
+    display: flex;
+    gap: 20px;
+
+    &__logo {
+      width: 53px;
+      height: 26px;
+    }
+  }
+}
