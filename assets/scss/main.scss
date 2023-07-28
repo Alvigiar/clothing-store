@@ -7,15 +7,13 @@
 // SECTION
 @import "./components/sections/mood";
 @import "./components/sections/categories.scss";
+@import "./components/sections/new-prod.scss";
+@import "./components/sections/discount.scss";
+@import "./components/sections/subscription.scss";
+@import "./components/sections/news.scss";
+// FOOTER
+@import "./components/footer/footer.scss";
 
 
 @import "./components/swiper/_swiper.scss";
 @import "./components/sections/_popular.scss";
-
-.up {
-  &-title {
-    padding: 21px 24px;
-    font-size: 10px;
-    line-height: 10px;
-  }
-}

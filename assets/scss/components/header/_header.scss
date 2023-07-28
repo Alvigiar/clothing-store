@@ -1,3 +1,14 @@
+.up {
+  &-title {
+    text-align: center;
+    margin: 24px 0px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #565656;
+  }
+}
+
 .head {
   background-color: black;
   color: white;

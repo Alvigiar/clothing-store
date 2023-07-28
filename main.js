@@ -49,7 +49,7 @@ var swiperCategoriesCategory = new Swiper(".swiperCategoriesCategory", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 5,
     },
     1440: {
       slidesPerView: 3,
@@ -58,7 +58,7 @@ var swiperCategoriesCategory = new Swiper(".swiperCategoriesCategory", {
 });
 
 var swiperNewProd = new Swiper(".swiperNewProd", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -75,7 +75,7 @@ var swiperNewProd = new Swiper(".swiperNewProd", {
 });
 
 var swiperDiscount = new Swiper(".swiperDiscount", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",

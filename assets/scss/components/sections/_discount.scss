@@ -1,0 +1,81 @@
+.discount {
+  margin-bottom: 60px;
+  &-head {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 100%;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0px 10px;
+      border: 0 solid;
+      background-color: #fff;
+
+      &-text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 100%;
+        color: #565656;
+      }
+    }
+  }
+
+  &-box {
+    display: flex;
+    position: relative;
+
+    &__img {
+      width: 162px;
+      height: 258px;
+      object-fit: cover;
+    }
+
+    &__favorite {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 18px;
+      height: 16px;
+    }
+
+    &__percent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 24px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 100%;
+      color: #fff;
+      background-color: #ED1331;
+    }
+  }
+
+  &-cost {
+    margin: 24px 0px 14px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #565656;
+  }
+}
