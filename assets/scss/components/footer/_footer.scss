@@ -21,6 +21,9 @@
   }
 
   a {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 100%;
@@ -33,6 +36,11 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
+
+    &__link {
+      width: 43px;
+      height: 44px;
+    }
   }
 
   &__line {
@@ -45,7 +53,7 @@
 
   &-copyright {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     flex-direction: column;
     align-items: center;
     text-align: center;

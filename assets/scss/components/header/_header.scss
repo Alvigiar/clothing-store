@@ -14,6 +14,14 @@
   color: white;
   padding: 23px 0px;
 
+  &-location {
+    display: none;
+  }
+
+  &-menu {
+    display: none;
+  }
+
   &-content {
     display: flex;
     justify-content: space-between;
@@ -33,6 +41,57 @@
     &__logo {
       width: 53px;
       height: 26px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .up {
+    &-title {
+      font-size: 14px;
+    }
+  }
+
+  .head {
+    &-menu {
+      display: flex;
+      gap: 0px 10px;
+
+      &__btn {
+        border: 0 solid;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 100%;
+        background-color: black;
+
+        &-sale {
+          padding: 13px 27px;
+          border: 0 solid;
+          border-radius: 50px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 100%;
+          background-color: red;
+        }
+      }
+    }
+
+    &-location {
+      display: flex;
+      gap: 0px 8px;
+
+      &__city {
+        width: 125px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 100%;
+        border: 0 solid;
+        background-color: black;
+      }
+    }
+
+    &-box {
+      gap: 0px 54px;
     }
   }
 }

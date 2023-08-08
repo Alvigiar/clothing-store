@@ -29,3 +29,9 @@
     top: 12px;
   }
 }
+
+@media (min-width:1440px) {
+  .head-burger {
+    display: none;
+  }
+}

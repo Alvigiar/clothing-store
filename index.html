@@ -19,17 +19,37 @@
       <div class="head__content head-content wrapper">
         <div class="head-content__box head-box">
           <!-- BURGER -->
-          <div class="head-nav__burger head-burger">
+          <div class="head-box__burger head-burger">
             <div class="head-burger__toggle">
-              <span> </span>
+              <span></span>
             </div>
           </div>
           <img
             src="/assets/img/header/Logo.svg"
-            alt="err-head-nav-logo"
-            class="head-nav__logo"
+            alt="err-head-box-logo"
+            class="head-box__logo"
           />
+          <div class="head-box__location head-location">
+            <img
+              src="/assets/img/header/location.svg"
+              alt="err-head-location-img"
+              class="head-location__img"
+            />
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Введите город"
+              class="head-location__city"
+            />
+          </div>
         </div>
+        <nav class="head-content__menu head-menu">
+          <input type="button" value="SALE" class="head-menu__btn-sale" />
+          <input type="button" value="ЖЕНЩИНАМ" class="head-menu__btn" />
+          <input type="button" value="МУЖЧИНАМ" class="head-menu__btn" />
+          <input type="button" value="ДЕТЯМ" class="head-menu__btn" />
+        </nav>
         <nav class="head-content__nav head-nav">
           <a href="#search"
             ><img
@@ -41,6 +61,12 @@
             ><img
               src="/assets/img/header/User.svg"
               alt="err-user"
+              class="head-nav__btn"
+          /></a>
+          <a href="#favorit"
+            ><img
+              src="/assets/img/header/favorit.svg"
+              alt="err-favorit"
               class="head-nav__btn"
           /></a>
           <a href="#bag"
@@ -96,7 +122,10 @@
       <!-- CATEGORIES -->
       <section class="categories">
         <!-- CATEGORIES CATEGORY -->
-        <div class="categories-category swiper swiperCategoriesCategory">
+        <div
+          class="categories-category swiper swiperCategoriesCategory"
+          id="swiperCategoriesCategory"
+        >
           <div class="categories-category__slider swiper-wrapper">
             <div class="categories-category__slide swiper-slide">
               <div class="categories-category__item category-item">
@@ -212,28 +241,27 @@
 
         <!-- CATEGORIES PRODUCTS INFO -->
         <div class="categories-products__info products-info wrapper">
-          <div class="products-info__title">Категории товаров</div>
-          <div class="products-info__text">
+          <span class="products-info__title">Категории товаров</span>
+          <span class="products-info__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
             blandit massa enim nec dui nunc mattis. Enim blandit volutpat
             maecenas volutpat blandit aliquam etiam.
-          </div>
+          </span>
         </div>
         <!-- / CATEGORIES PRODUCTS INFO -->
 
-        <!-- CATEGORIES-SIGN -->
-        <div class="categories-sign">
-          <div class="categories-sign__main sign-main">
-            <img
-              src="/assets/img/categories-products/sign-main.svg"
-              alt="err-sign-main__img"
-              class="sign-main__img"
-            />
-          </div>
+        <div class="categories__main categories-main wrapper">
+          <img
+            src="/assets/img/categories-products/main.svg"
+            alt="err-sign-main__img"
+            class="categories-main__img"
+          />
+        </div>
 
-          <!-- SIGN SLIDER -->
-          <div class="swiper swiperProducts">
+        <!-- SIGN SLIDER -->
+        <div class="categories-sign">
+          <div class="swiper swiperProducts" id="swiperProducts">
             <div class="categories-sign__box swiper-wrapper">
               <div class="categories-sign__slider sign-slider swiper-slide">
                 <img
@@ -299,7 +327,7 @@
         </div>
 
         <!-- NEW-PROD SLIDER -->
-        <div class="swiper swiperNewProd">
+        <div class="swiper swiperNewProd" id="swiperNewProd">
           <div class="new-prod__slider prod-slider swiper-wrapper">
             <div class="prod-slider__item prod-item swiper-slide">
               <!-- BOX IMG -->
@@ -489,7 +517,7 @@
 
       <!-- / POPULAR -->
       <section class="popular wrapper">
-        <h1 class="popular__title">Полуряное</h1>
+        <h1 class="popular__title">Актуальное</h1>
         <div class="popular__main popular-main">
           <img
             src="/assets/img/popular/main-img.svg"
@@ -738,10 +766,8 @@
             class="subscription__content subscription-content subscription-content__wrapper wrapper"
           >
             <div class="subscription-content__title">
-              <span class="subsscription-content__title-up"> Скидка 10% </span>
-              <span class="subscription-content__title-down">
-                на подписку
-              </span>
+              <span class="subsscription-content__title-up"> Скидка 10%</span>
+              <span class="subscription-content__title-down">на подписку</span>
             </div>
             <form
               method="post"
@@ -763,6 +789,35 @@
                 class="subscription-post__btn"
               />
             </form>
+            <div class="subscription-content__social subscription-social">
+              <a href="#VK" class="subscription-social__link subscription-link">
+                <img
+                  src="/assets/img/subscription/vk.svg"
+                  alt="err-subscription-link-img"
+                  class="subscription-link__img"
+                />
+              </a>
+              <a
+                href="#Inst"
+                class="subscription-social__link subscription-link"
+              >
+                <img
+                  src="/assets/img/subscription/instagram.svg"
+                  alt="err-subscription-link-img"
+                  class="subscription-link__img"
+                />
+              </a>
+              <a
+                href="#YouTube"
+                class="subscription-social__link subscription-link"
+              >
+                <img
+                  src="/assets/img/subscription/yt.svg"
+                  alt="err-subscription-link-img"
+                  class="subscription-link__img"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div class="subscription__background subscription-background__two">
@@ -809,50 +864,62 @@
 
       <!-- NEWS -->
       <section class="news wrapper">
-        <h1 class="news__title">Модные новости</h1>
+        <span class="news__title">Модные новости</span>
         <div class="swiper swiperNews">
-          <div class="news__slider news-slider swiper-wrapper">
-            <div class="news-slider__item news-item swiper-slide">
-              <img
-                src="/assets/img/news/young1.svg"
-                alt="err-news-item-img"
-                class="news-item__img"
-              />
-              <div class="news-item__info news-info">
-                <span class="news-info__title">Совершайте покупки,</span>
-                <span class="news-item__subtitle"
-                  >Которые сделают мир лучше.</span
-                >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="news__slider news-slider">
+                <div class="news-slider__pick">
+                  <img
+                    src="/assets/img/news/young1.svg"
+                    alt="err-news-slider-img"
+                    class="news-slider__img"
+                  />
+                </div>
+                <div class="news-slider__info news-info">
+                  <span class="news-info__title">Совершайте покупки,</span>
+                  <span class="news-slider__subtitle"
+                    >Которые сделают мир лучше.</span
+                  >
+                </div>
               </div>
             </div>
-            <div class="news-slider__item news-item swiper-slide">
-              <img
-                src="/assets/img/news/young2.svg"
-                alt="err-news-item-img"
-                class="news-item__img"
-              />
-              <div class="news-item__info news-info">
-                <span class="news-info__title">Совершайте покупки,</span>
-                <span class="news-item__subtitle"
-                  >Которые сделают мир лучше.</span
-                >
+            <div class="swiper-slide">
+              <div class="news__slider news-slider">
+                <div class="news-slider__pick">
+                  <img
+                    src="/assets/img/news/young2.svg"
+                    alt="err-news-slider-img"
+                    class="news-slider__img"
+                  />
+                </div>
+                <div class="news-slider__info news-info">
+                  <span class="news-info__title">Совершайте покупки,</span>
+                  <span class="news-slider__subtitle"
+                    >Которые сделают мир лучше.</span
+                  >
+                </div>
               </div>
             </div>
-            <div class="news-slider__item news-item swiper-slide">
-              <img
-                src="/assets/img/news/young3.svg"
-                alt="err-news-item-img"
-                class="news-item__img"
-              />
-              <div class="news-item__info news-info">
-                <span class="news-info__title">Совершайте покупки,</span>
-                <span class="news-item__subtitle"
-                  >Которые сделают мир лучше.</span
-                >
+            <div class="swiper-slide">
+              <div class="news__slider news-slider">
+                <div class="news-slider__pick">
+                  <img
+                    src="/assets/img/news/young3.svg"
+                    alt="err-news-slider-img"
+                    class="news-slider__img"
+                  />
+                </div>
+                <div class="news-slider__info news-info">
+                  <span class="news-info__title">Совершайте покупки,</span>
+                  <span class="news-slider__subtitle"
+                    >Которые сделают мир лучше.</span
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination news__swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -958,8 +1025,7 @@
         </div>
       </div>
       <!-- COPYRIGHT -->
-      <div class="footer__line">
-      </div>
+      <div class="footer__line"></div>
       <div class="footer__copyright footer-copyright wrapper">
         <span class="footer-copyright__reserved">
           © Copyright 2022 4:20 shop. All Rights reserved.

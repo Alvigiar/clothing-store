@@ -59,7 +59,7 @@
       font-weight: 600;
       line-height: 100%;
       color: #fff;
-      background-color: #ED1331;
+      background-color: #ed1331;
     }
   }
 
@@ -77,5 +77,22 @@
     font-weight: 400;
     line-height: 100%;
     color: #565656;
+  }
+}
+
+@media (min-width: 1440px) {
+  .discount {
+    &-item {
+      width: 300px;
+      height: 585px;
+    }
+
+    &-box {
+      height: 463px;
+      &__img {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }
